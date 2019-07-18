@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="redroid" fetch="." revision="redroid-8.1.0" />
+    <remote name="androidx86" fetch="git://git.osdn.net/gitroot/android-x86" revision="oreo-x86" />
+
+    <!-- remove unused projects -->
+    <remove-project name="platform/developers/build" />
+    <remove-project name="platform/developers/demos" />
+    <remove-project name="platform/developers/samples/android" />
+    <remove-project name="device/asus/fugu" />
+    <remove-project name="device/asus/fugu-kernel" />
+    <remove-project name="device/generic/mips" />
+    <remove-project name="device/generic/mips64" />
+    <remove-project name="device/generic/mini-emulator-arm64" />
+    <remove-project name="device/generic/mini-emulator-armv7-a-neon" />
+    <remove-project name="device/generic/mini-emulator-mips" />
+    <remove-project name="device/generic/mini-emulator-mips64" />
+    <remove-project name="device/generic/mini-emulator-x86" />
+    <remove-project name="device/generic/mini-emulator-x86_64" />
+    <remove-project name="device/generic/car" />
+    <remove-project name="device/generic/qemu" />
+    <remove-project name="device/generic/uml" />
+    <remove-project name="device/google/accessory/arduino" />
+    <remove-project name="device/google/accessory/demokit" />
+    <remove-project name="device/google/atv" />
+    <remove-project name="device/google/contexthub" />
+    <remove-project name="device/google/dragon" />
+    <remove-project name="device/google/dragon-kernel" />
+    <remove-project name="device/google/marlin" />
+    <remove-project name="device/google/marlin-kernel" />
+    <remove-project name="device/google/muskie" />
+    <remove-project name="device/google/taimen" />
+    <remove-project name="device/google/vrservices" />
+    <remove-project name="device/google/wahoo" />
+    <remove-project name="device/google/wahoo-kernel" />
+    <remove-project name="device/huawei/angler" />
+    <remove-project name="device/huawei/angler-kernel" />
+    <remove-project name="device/lge/bullhead" />
+    <remove-project name="device/lge/bullhead-kernel" />
+    <remove-project name="device/linaro/bootloader/arm-trusted-firmware" />
+    <remove-project name="device/linaro/bootloader/edk2" />
+    <remove-project name="device/linaro/bootloader/OpenPlatformPkg" />
+    <remove-project name="device/linaro/hikey" />
+    <remove-project name="device/linaro/hikey-kernel" />
+    <remove-project name="device/sample" />
+    <remove-project name="platform/docs/source.android.com" />
+    <remove-project name="platform/hardware/akm" />
+    <remove-project name="platform/hardware/broadcom/libbt" />
+    <remove-project name="platform/hardware/broadcom/wlan" />
+    <remove-project name="platform/hardware/intel/audio_media" />
+    <remove-project name="platform/hardware/intel/bootstub" />
+    <remove-project name="platform/hardware/intel/common/bd_prov" />
+    <remove-project name="platform/hardware/intel/common/libmix" />
+    <remove-project name="platform/hardware/intel/common/libstagefrighthw" />
+    <remove-project name="platform/hardware/intel/common/libva" />
+    <remove-project name="platform/hardware/intel/common/libwsbm" />
+    <remove-project name="platform/hardware/intel/common/omx-components" />
+    <remove-project name="platform/hardware/intel/common/utils" />
+    <remove-project name="platform/hardware/intel/common/wrs_omxil_core" />
+    <remove-project name="platform/hardware/intel/img/hwcomposer" />
+    <remove-project name="platform/hardware/intel/img/psb_headers" />
+    <remove-project name="platform/hardware/intel/img/psb_video" />
+    <remove-project name="platform/hardware/intel/sensors" />
+    <remove-project name="platform/hardware/invensense" />
+    <remove-project name="platform/hardware/marvell/bt" />
+    <remove-project name="platform/hardware/qcom/audio" />
+    <remove-project name="platform/hardware/qcom/bootctrl" />
+    <remove-project name="platform/hardware/qcom/bt" />
+    <remove-project name="platform/hardware/qcom/camera" />
+    <remove-project name="platform/hardware/qcom/data/ipacfg-mgr" />
+    <remove-project name="platform/hardware/qcom/display" />
+    <remove-project name="platform/hardware/qcom/gps" />
+    <remove-project name="platform/hardware/qcom/keymaster" />
+    <remove-project name="platform/hardware/qcom/media" />
+    <remove-project name="platform/hardware/qcom/msm8960" />
+    <remove-project name="platform/hardware/qcom/msm8994" />
+    <remove-project name="platform/hardware/qcom/msm8996" />
+    <remove-project name="platform/hardware/qcom/msm8998" />
+    <remove-project name="platform/hardware/qcom/msm8x26" />
+    <remove-project name="platform/hardware/qcom/msm8x27" />
+    <remove-project name="platform/hardware/qcom/msm8x84" />
+    <remove-project name="platform/hardware/qcom/msm8x09" />
+    <remove-project name="platform/hardware/qcom/power" />
+    <remove-project name="platform/hardware/qcom/wlan" />
+    <remove-project name="kernel/tests" />
+    <remove-project name="platform/prebuilts/android-emulator" />
+    <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
+    <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
+    <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" />
+    <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
+    <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+    <remove-project name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" />
+    <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
+    <remove-project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" />
+    <remove-project name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" />
+    <remove-project name="platform/prebuilts/gdb/darwin-x86" />
+    <remove-project name="platform/prebuilts/go/darwin-x86" />
+    <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+
+    <!-- remove few projects we have replacements for -->
+    <remove-project name="platform/external/libdrm" />
+    <remove-project name="platform/external/mesa3d" />
+    <remove-project name="platform/external/minijail" />
+    <remove-project name="platform/external/selinux" />
+    <remove-project name="platform/external/swiftshader" />
+    <remove-project name="platform/frameworks/av" />
+    <remove-project name="platform/frameworks/base" />
+    <remove-project name="platform/frameworks/native" />
+    <remove-project name="platform/frameworks/opt/net/ethernet" />
+    <remove-project name="platform/system/core" />
+    <remove-project name="platform/system/hwservicemanager" />
+    <remove-project name="platform/system/netd" />
+    <remove-project name="platform/system/vold" />
+
+    <!-- These are all Android repositories we have modifications for -->
+    <project path="external/drm_framebuffer" name="external-drm_framebuffer" groups="redroid" remote="androidx86" />
+    <project path="external/gbm_gralloc" name="external-gbm_gralloc" groups="redroid,bsp"  remote="androidx86" />
+    <project path="external/libdrm" name="external-libdrm" groups="redroid,aosp,pdk" remote="androidx86" />
+    <project path="external/llvm90" name="platform_external_llvm90" groups="redroid" remote="redroid" />
+    <project path="external/mesa3d" name="external-mesa" groups="redroid,aosp,pdk-cw-fs,pdk-fs" remote="androidx86" />
+    <project path="external/minijail" name="platform_external_minijail" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="external/selinux" name="platform_external_selinux" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="frameworks/av" name="platform_frameworks_av" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="frameworks/base" name="platform_frameworks_base" groups="redroid,aosp,pdk-cw-fs,pdk-fs" remote="redroid" />
+    <project path="frameworks/native" name="platform_frameworks_native" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="frameworks/opt/net/ethernet" name="platform_frameworks_opt_net_ethernet" groups="redroid,aosp,pdk-fs" remote="redroid" />
+    <project path="system/core" name="platform_system_core" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="system/hwservicemanager" name="platform_system_hwservicemanager" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="system/netd" name="platform_system_netd" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="system/vold" name="platform_system_vold" groups="redroid,aosp,pdk" remote="redroid" />
+
+    <!-- change to upstream  -->
+    <project path="external/swiftshader" name="platform_external_swiftshader" groups="redroid,pdk"  remote="redroid" />
+
+    <!-- Our own components -->
+    <project path="device/redroid" name="device_redroid" groups="redroid" remote="redroid" />
+    <project path="vendor/redroid" name="vendor_redroid" groups="redroid" remote="redroid" revision="master" />
+
+</manifest>
