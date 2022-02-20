@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-t-preview-1"
            remote="aosp"
@@ -1071,4 +1071,6 @@
 
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
+  <include name="redroid.xml" />
+  <include name="aosp-fix.xml" />
 </manifest>

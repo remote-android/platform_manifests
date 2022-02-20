@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <extend-project name="platform/art" revision="6c273080adebb71fc99d9a7426f905f331b27757" upstream="master" />
+
+    <remove-project name="device/google/fuchsia" />
+
+    <project path="external/connectedappssdk" name="platform/external/connectedappssdk" groups="pdk" revision="d683d7d4f36353ff6c40a719c785a0dd7e66e60d" upstream="master" />
+    <project path="external/exfatprogs" name="platform/external/exfatprogs" groups="pdk" revision="950aa66e933581179666282a1f42ef3a4555fd15" upstream="master" />
+    <project path="external/fft2d" name="platform/external/fft2d" groups="pdk" revision="4d2dff89a2472f4247da2a85983a37f35b5f5089" upstream="master" />
+    <project path="external/go-cmp" name="platform/external/go-cmp" groups="pdk" clone-depth="1" revision="435f492b8ec1566bcf5370d37fa8999c8789c2a8" upstream="master" />
+    <extend-project name="platform/external/hyphenation-patterns" revision="24fc3d2b0e60a49708b797854f4537c955e0e868" upstream="master" />
+    <project path="external/icing" name="platform/external/icing" groups="pdk" revision="ac1bdbdf75212de81b3b5b2b413e4696125eb2be" upstream="master" />
+    <project path="external/javassist" name="platform/external/javassist" groups="pdk" clone-depth="1" revision="ff27198ca0ca47d75bf025695f6edecfb67fbf3b" upstream="master" />
+    <project path="external/jazzer-api" name="platform/external/jazzer-api" groups="pdk" clone-depth="1" revision="5190f27c34ad44664c395bbc8e01489dbe3abb39" upstream="master" />
+    <project path="external/libbpf" name="platform/external/libbpf" groups="pdk" revision="78584dba4fe967d0a162be16840f845b785a7fe8" upstream="master" />
+    <project path="external/liburing" name="platform/external/liburing" groups="pdk" revision="032ff79dc4cc37c73e1ea4e89177398ee854a7df" upstream="master" />
+    <project path="external/mobly-snippet-lib" name="platform/external/mobly-snippet-lib" groups="pdk" revision="c1a1245a8aad719481f1578a1e3de3efeef575e7" upstream="master" />
+    <project path="external/open-dice" name="platform/external/open-dice" groups="pdk" revision="87be81258fde167ebcd7ba2749803406b0c3935b" upstream="master" />
+    <project path="external/python/cachetools" name="platform/external/python/cachetools" groups="pdk" revision="a0eafbe9303902bc48876d0f2acd8ac67067b586" upstream="master" />
+    <project path="external/python/google-auth-library-python" name="platform/external/python/google-auth-library-python" groups="pdk" revision="2366dfe79e0b352a821cff2a82b48d5c11e1a9a5" upstream="master" />
+    <project path="external/python/python-api-core" name="platform/external/python/python-api-core" groups="pdk" revision="f0eb63f7c5b97b2bbf660881b8e45a1bbb14b3de" upstream="master" />
+    <project path="external/rust/crates/argh_derive" name="platform/external/rust/crates/argh_derive" groups="pdk" revision="ec8cf6305c78b7f091d2b4b0b87d3c845dca53bd" upstream="master" />
+    <project path="external/rust/crates/argh" name="platform/external/rust/crates/argh" groups="pdk" revision="66146ee0308cdd467c660cb7eb88e329fbda42dd" upstream="master" />
+    <project path="external/rust/crates/argh_shared" name="platform/external/rust/crates/argh_shared" groups="pdk" revision="d8f2c9e91387f3581c9c68902d13870bed838f6b" upstream="master" />
+    <project path="external/rust/crates/base64" name="platform/external/rust/crates/base64" groups="pdk" revision="cded7e2bcec99fc080ccd44a7fe4a125f3641104" upstream="master" />
+    <project path="external/rust/crates/command-fds" name="platform/external/rust/crates/command-fds" groups="pdk" revision="2c51e94c7656901411cb5b224af2bf2cc75e5f66" upstream="master" />
+    <project path="external/rust/crates/der-oid-macro" name="platform/external/rust/crates/der-oid-macro" groups="pdk" revision="9fe9eaa843bc45e69970f4edf530eb90e72384ee" upstream="master" />
+    <project path="external/rust/crates/der-parser" name="platform/external/rust/crates/der-parser" groups="pdk" revision="8f12ac13734c74f8ed88105ea524281f773e4360" upstream="master" />
+    <project path="external/rust/crates/enumn" name="platform/external/rust/crates/enumn" groups="pdk" revision="856ed9a3e6ab64e36a42aa2032a7bbbcc553f66f" upstream="master" />
+    <project path="external/rust/crates/gdbstub_arch" name="platform/external/rust/crates/gdbstub_arch" groups="pdk" revision="554e9d1da7e786af0fd3a67464a0577d05bb2419" upstream="master" />
+    <project path="external/rust/crates/kernlog" name="platform/external/rust/crates/kernlog" groups="pdk" revision="0f803e21ea82f291a2c91ca326bf43afe3d4544d" upstream="master" />
+    <project path="external/rust/crates/minimal-lexical" name="platform/external/rust/crates/minimal-lexical" groups="pdk" revision="b483d0cb23801bdf1422fbbc8f25e6e7c1ebacc0" upstream="master" />
+    <project path="external/rust/crates/num-bigint" name="platform/external/rust/crates/num-bigint" groups="pdk" revision="c020b9e655285821e5a77fd37c48e3237dfdbe96" upstream="master" />
+    <project path="external/rust/crates/oid-registry" name="platform/external/rust/crates/oid-registry" groups="pdk" revision="f0688e4a3557ad78e69505c2c6c7ca40fa9d2680" upstream="master" />
+    <project path="external/rust/crates/quickcheck" name="platform/external/rust/crates/quickcheck" groups="pdk" revision="6531c8d3ca9d4adc91454a26bebc6820c0029874" upstream="master" />
+    <project path="external/rust/crates/remove_dir_all" name="platform/external/rust/crates/remove_dir_all" groups="pdk" revision="8fbe1090a2dcf38bfe92c9922f6a9f0dd4b0e50f" upstream="master" />
+    <project path="external/rust/crates/rusticata-macros" name="platform/external/rust/crates/rusticata-macros" groups="pdk" revision="3575b7b4283cced6f92f84967c94dd4c4125075f" upstream="master" />
+    <project path="external/rust/crates/serde-xml-rs" name="platform/external/rust/crates/serde-xml-rs" groups="pdk" revision="c14d32c87af23003cc84c49051deb73147e1ba58" upstream="master" />
+    <project path="external/rust/crates/tempfile" name="platform/external/rust/crates/tempfile" groups="pdk" revision="43b625a726140105aff250c63e50f7722bdd7988" upstream="master" />
+    <project path="external/rust/crates/x509-parser" name="platform/external/rust/crates/x509-parser" groups="pdk" revision="5015202c398a3805acef7d25e605059af5dab40f" upstream="master" />
+    <project path="external/rust/crates/xml-rs" name="platform/external/rust/crates/xml-rs" groups="pdk" revision="72b57397cda6b125326566a16053cc22d971d60c" upstream="master" />
+    <project path="external/zucchini" name="platform/external/zucchini" groups="pdk" clone-depth="1" revision="0d1306182f498b99796919b13f6ba7ff0961d64d" upstream="master" />
+
+    <extend-project name="platform/libcore" revision="6e2abfd765491046e790b7ef4ed54781d4e8d0cd" upstream="master" />
+
+    <extend-project name="platform/packages/apps/Settings" revision="2e6f2dcfff4698fd8afdd4447469e4fa12508426" upstream="master" />
+    <project path="packages/modules/AppSearch" name="platform/packages/modules/AppSearch" groups="pdk" revision="0aa06ed8980de3560fadeeefb7cc409a3e8eeea4" upstream="master" />
+    <remove-project name="platform/packages/apps/Bluetooth" />
+    <project path="packages/modules/Bluetooth" name="platform/packages/modules/Bluetooth" groups="pdk" revision="423b9c3d2458aba5fdbc0a076aa159ebf671d0a8" upstream="master" />
+    <extend-project name="platform/packages/modules/NeuralNetworks" revision="1e19f2f8a7881b87d7cd37666af852cb1772ec8e" upstream="master" />
+    <project path="packages/modules/Scheduling" name="platform/packages/modules/Scheduling" groups="pdk-cw-fs,pdk-fs" revision="80ac8c6c66aaee2007709cc9a9c03adf4a84dba5" upstream="master" />
+    <project path="packages/modules/SEPolicy" name="platform/packages/modules/SEPolicy" groups="pdk-cw-fs,pdk-fs" revision="0510dbb81ace41d6c31e3421abb937d424a4eea4" upstream="master" />
+    <project path="packages/modules/Uwb" name="platform/packages/modules/Uwb" groups="pdk-cw-fs,pdk-fs" revision="2b6727f25dff4eafdf50306463cd5d70ee65809f" upstream="master" />
+
+    <project path="prebuilts/vndk/v31" name="platform/prebuilts/vndk/v31" groups="pdk" clone-depth="1" revision="cf372d84d6ab4865dcfbc1a0b3182f01016e3dc4" upstream="master" />
+
+    <project path="system/librustutils" name="platform/system/librustutils" groups="pdk" revision="686ca92e3acf0d43a337e5f36723248a722e83a3" upstream="master" />
+</manifest>

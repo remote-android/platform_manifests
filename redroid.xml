@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="redroid" fetch="." revision="redroid-t-preview-1" />
+
+    <!-- remove unused projects -->
+    <remove-project name="platform/prebuilts/bazel/darwin-x86_64" />
+    <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
+    <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
+    <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
+    <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+    <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
+    <remove-project name="platform/prebuilts/gdb/darwin-x86" />
+    <remove-project name="platform/prebuilts/go/darwin-x86" />
+    <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+
+    <!-- remove few projects we have replacements for -->
+    <remove-project name="toolchain/llvm-project" />
+    <remove-project name="platform/external/mesa3d" />
+    <remove-project name="platform/external/selinux" />
+    <remove-project name="platform/frameworks/av" />
+    <remove-project name="platform/frameworks/native" />
+    <remove-project name="platform/system/bpf" />
+    <remove-project name="platform/system/core" />
+    <remove-project name="platform/system/libhwbinder" />
+    <remove-project name="platform/system/netd" />
+
+    <!-- These are all Android repositories we have modifications for -->
+    <project path="external/llvm-project" name="llvm-project" groups="redroid,pdk" remote="redroid" />
+    <project path="external/mesa3d" name="mesa" groups="redroid,pdk-cw-fs,pdk-fs" remote="redroid" />
+    <project path="external/selinux" name="platform_external_selinux" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="frameworks/av" name="platform_frameworks_av" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="frameworks/native" name="platform_frameworks_native" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="system/bpf" name="platform_system_bpf" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="system/core" name="platform_system_core" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="system/libhwbinder" name="platform_system_libhwbinder" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="system/netd" name="platform_system_netd" groups="redroid,aosp,pdk" remote="redroid" />
+
+    <!-- Our own components -->
+    <project path="external/drm_framebuffer" name="platform_external_drm_framebuffer" groups="redroid" remote="redroid" />
+    <project path="external/gbm_gralloc" name="platform_external_gbm_gralloc" groups="redroid"  remote="redroid" />
+    <project path="device/redroid" name="device_redroid" groups="redroid" remote="redroid" />
+    <project path="vendor/redroid" name="vendor_redroid" groups="redroid" remote="redroid" />
+    <project path="external/libvncserver" name="platform/external/libvncserver" groups="pdk" revision="refs/tags/android-9.0.0_r61" />
+
+</manifest>
