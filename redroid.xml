@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="redroid" fetch="." revision="redroid-8.1.0" />
+
+    <!-- remove unused projects -->
+    <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
+    <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
+    <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" />
+    <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
+    <remove-project name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" />
+    <remove-project name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" />
+    <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
+    <remove-project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" />
+    <remove-project name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" />
+    <remove-project name="platform/prebuilts/gdb/darwin-x86" />
+    <remove-project name="platform/prebuilts/go/darwin-x86" />
+    <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
+
+    <!-- remove few projects we have replacements for -->
+    <remove-project name="platform/external/libdrm" />
+    <remove-project name="platform/external/mesa3d" />
+    <remove-project name="platform/external/selinux" />
+    <remove-project name="platform/external/swiftshader" />
+    <remove-project name="platform/frameworks/av" />
+    <remove-project name="platform/frameworks/base" />
+    <remove-project name="platform/frameworks/native" />
+    <remove-project name="platform/frameworks/opt/net/ethernet" />
+    <remove-project name="platform/system/core" />
+    <remove-project name="platform/system/hwservicemanager" />
+    <remove-project name="platform/system/netd" />
+    <remove-project name="platform/system/vold" />
+
+    <!-- These are all Android repositories we have modifications for -->
+    <project path="external/libdrm" name="platform_external_libdrm" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="external/mesa3d" name="platform_external_mesa3d" groups="redroid,aosp,pdk-cw-fs,pdk-fs" remote="redroid" />
+    <project path="external/selinux" name="platform_external_selinux" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="frameworks/av" name="platform_frameworks_av" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="frameworks/base" name="platform_frameworks_base" groups="redroid,aosp,pdk-cw-fs,pdk-fs" remote="redroid" />
+    <project path="frameworks/native" name="platform_frameworks_native" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="frameworks/opt/net/ethernet" name="platform_frameworks_opt_net_ethernet" groups="redroid,aosp,pdk-fs" remote="redroid" />
+    <project path="system/core" name="platform_system_core" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="system/hwservicemanager" name="platform_system_hwservicemanager" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="system/netd" name="platform_system_netd" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="system/vold" name="platform_system_vold" groups="redroid,aosp,pdk" remote="redroid" />
+
+    <!-- change to upstream  -->
+    <project path="external/swiftshader" name="platform_external_swiftshader" groups="redroid,pdk"  remote="redroid" />
+
+    <!-- Our own components -->
+    <project path="device/redroid" name="device_redroid" groups="redroid" remote="redroid" />
+    <project path="external/drm_framebuffer" name="platform_external_drm_framebuffer" groups="redroid" remote="redroid" />
+    <project path="external/gbm_gralloc" name="platform_external_gbm_gralloc" groups="redroid,bsp"  remote="redroid" />
+    <project path="external/llvm90" name="platform_external_llvm90" groups="redroid" remote="redroid" />
+    <project path="vendor/redroid" name="vendor_redroid" groups="redroid" remote="redroid" />
+
+</manifest>
