@@ -19,6 +19,7 @@
     <remove-project name="platform/external/selinux" />
     <remove-project name="platform/frameworks/av" />
     <remove-project name="platform/frameworks/native" />
+    <remove-project name="platform/packages/modules/Permission" />
     <remove-project name="platform/system/bpf" />
     <remove-project name="platform/system/core" />
     <remove-project name="platform/system/libhwbinder" />
@@ -32,6 +33,7 @@
     <project path="external/selinux" name="platform_external_selinux" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="frameworks/av" name="platform_frameworks_av" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="frameworks/native" name="platform_frameworks_native" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="packages/modules/Permission" name="platform_packages_modules_Permission" groups="redroid,aosp,pdk-cw-fs,pdk-fs" remote="redroid" />
     <project path="system/bpf" name="platform_system_bpf" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="system/core" name="platform_system_core" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="system/libhwbinder" name="platform_system_libhwbinder" groups="redroid,aosp,pdk" remote="redroid" />
