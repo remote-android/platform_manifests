@@ -37,7 +37,6 @@
     <project path="system/netd" name="platform_system_netd" groups="redroid,aosp,pdk" remote="redroid" />
 
     <!-- Our own components -->
-    <project path="external/drm_framebuffer" name="platform_external_drm_framebuffer" groups="redroid" remote="redroid" />
     <project path="external/gbm_gralloc" name="platform_external_gbm_gralloc" groups="redroid"  remote="redroid" />
     <project path="external/libvncserver" name="platform/external/libvncserver" groups="pdk" revision="refs/tags/android-9.0.0_r61" />
     <project path="external/llvm-project" name="llvm-project" groups="redroid" remote="redroid" />
