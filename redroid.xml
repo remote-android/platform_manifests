@@ -23,10 +23,7 @@
     <remove-project name="platform/system/libhwbinder" />
     <remove-project name="platform/system/netd" />
 
-    <extend-project name="platform/external/libdrm" revision="bdbf71cace3ca42fcbe66cf1d5de0114e4154633" />
-
     <!-- These are all Android repositories we have modifications for -->
-    <project path="external/mesa3d" name="mesa" groups="redroid,pdk-cw-fs,pdk-fs" remote="redroid" />
     <project path="external/selinux" name="platform_external_selinux" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="frameworks/av" name="platform_frameworks_av" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="frameworks/base" name="platform_frameworks_base" groups="redroid,aosp,pdk-cw-fs,pdk-fs" remote="redroid" />
@@ -37,10 +34,11 @@
     <project path="system/netd" name="platform_system_netd" groups="redroid,aosp,pdk" remote="redroid" />
 
     <!-- Our own components -->
-    <project path="external/gbm_gralloc" name="platform_external_gbm_gralloc" groups="redroid"  remote="redroid" />
+    <project path="external/drm_framebuffer" name="platform_external_drm_framebuffer" groups="redroid" remote="redroid" revision="master-redroid" />
+    <project path="external/gbm_gralloc" name="platform_external_gbm_gralloc" groups="redroid"  remote="redroid" revision="master-redroid" />
     <project path="external/libvncserver" name="platform/external/libvncserver" groups="pdk" revision="refs/tags/android-9.0.0_r61" />
-    <project path="external/llvm-project" name="llvm-project" groups="redroid" remote="redroid" />
     <project path="device/redroid" name="device_redroid" groups="redroid" remote="redroid" />
+    <project path="device/redroid-prebuilts" name="device_redroid-prebuilts" groups="redroid" remote="redroid" revision="master" clone-depth="1" />
     <project path="vendor/redroid" name="vendor_redroid" groups="redroid" remote="redroid" />
 
 </manifest>
