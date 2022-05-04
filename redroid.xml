@@ -13,7 +13,6 @@
     <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
 
     <!-- remove few projects we have replacements for -->
-    <remove-project name="platform/external/libdrm" />
     <remove-project name="platform/external/mesa3d" />
     <remove-project name="platform/external/selinux" />
     <remove-project name="platform/frameworks/av" />
@@ -25,8 +24,6 @@
     <remove-project name="platform/system/vold" />
 
     <!-- These are all Android repositories we have modifications for -->
-    <project path="external/libdrm" name="platform_external_libdrm" groups="redroid,aosp,pdk" remote="redroid" />
-    <project path="external/mesa3d" name="mesa" groups="redroid,aosp,pdk-cw-fs,pdk-fs" remote="redroid" />
     <project path="external/selinux" name="platform_external_selinux" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="frameworks/av" name="platform_frameworks_av" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="frameworks/base" name="platform_frameworks_base" groups="redroid,aosp,pdk-cw-fs,pdk-fs" remote="redroid" />
@@ -51,9 +48,9 @@
             src="prebuilts/clang/host/linux-x86/clang-r353983c/lib64/clang/9.0.3/lib/linux/libclang_rt.scudo_minimal-x86_64-android.a"
             dest="prebuilts/clang/host/linux-x86/clang-r353983c/lib64/clang/9.0.3/lib/linux/libclang_rt.scudo_minimal-x86_64-android.a" />
     </project>
-    <project path="external/drm_framebuffer" name="platform_external_drm_framebuffer" groups="redroid" remote="redroid" />
-    <project path="external/gbm_gralloc" name="platform_external_gbm_gralloc" groups="redroid,bsp"  remote="redroid" />
-    <project path="external/llvm-project" name="llvm-project" groups="redroid" remote="redroid" />
+    <project path="device/redroid-prebuilts" name="device_redroid-prebuilts" groups="redroid" remote="redroid" revision="master" clone-depth="1" />
+    <project path="external/drm_framebuffer" name="platform_external_drm_framebuffer" groups="redroid" remote="redroid" revision="master-redroid" />
+    <project path="external/gbm_gralloc" name="platform_external_gbm_gralloc" groups="redroid,bsp"  remote="redroid" revision="master-redroid" />
     <project path="vendor/redroid" name="vendor_redroid" groups="redroid" remote="redroid" />
 
 </manifest>
