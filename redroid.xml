@@ -55,4 +55,6 @@
     </project>
     <project path="vendor/redroid" name="vendor_redroid" groups="redroid" remote="redroid" revision="master" />
 
+    <include name="external.xml" />
+
 </manifest>
