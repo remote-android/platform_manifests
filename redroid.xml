@@ -18,7 +18,6 @@
     <remove-project name="platform/external/selinux" />
     <remove-project name="platform/frameworks/av" />
     <remove-project name="platform/frameworks/native" />
-    <remove-project name="platform/packages/modules/Permission" />
     <remove-project name="platform/system/bpf" />
     <remove-project name="platform/system/core" />
     <remove-project name="platform/system/libhwbinder" />
@@ -28,18 +27,18 @@
     <project path="external/selinux" name="platform_external_selinux" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="frameworks/av" name="platform_frameworks_av" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="frameworks/native" name="platform_frameworks_native" groups="redroid,aosp,pdk" remote="redroid" />
-    <project path="packages/modules/Permission" name="platform_packages_modules_Permission" groups="redroid,aosp,pdk-cw-fs,pdk-fs" remote="redroid" />
     <project path="system/bpf" name="platform_system_bpf" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="system/core" name="platform_system_core" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="system/libhwbinder" name="platform_system_libhwbinder" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="system/netd" name="platform_system_netd" groups="redroid,aosp,pdk" remote="redroid" />
 
     <!-- Our own components -->
-    <project path="external/drm_framebuffer" name="platform_external_drm_framebuffer" groups="redroid" remote="redroid" revision="master-redroid" />
-    <project path="external/gbm_gralloc" name="platform_external_gbm_gralloc" groups="redroid"  remote="redroid" revision="master-redroid" />
     <project path="device/redroid" name="device_redroid" groups="redroid" remote="redroid" />
     <project path="device/redroid-prebuilts" name="device_redroid-prebuilts" groups="redroid" remote="redroid" revision="master" clone-depth="1" />
-    <project path="vendor/redroid" name="vendor_redroid" groups="redroid" remote="redroid" />
     <project path="external/libvncserver" name="platform/external/libvncserver" groups="pdk" revision="refs/tags/android-9.0.0_r61" />
+    <project path="external/redroid-vncserver" name="redroid-vncserver" groups="redroid" remote="redroid" />
+    <project path="hardware/redroid/c2" name="redroid-c2" groups="redroid" remote="redroid" revision="master" />
+    <project path="hardware/redroid/omx" name="redroid-omx" groups="redroid" remote="redroid" revision="master" />
+    <project path="vendor/redroid" name="vendor_redroid" groups="redroid" remote="redroid" revision="master" />
 
 </manifest>
