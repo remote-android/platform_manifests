@@ -17,7 +17,6 @@
     <!-- remove few projects we have replacements for -->
     <remove-project name="platform/external/mesa3d" />
     <remove-project name="platform/external/selinux" />
-    <remove-project name="platform/external/swiftshader" />
     <remove-project name="platform/frameworks/av" />
     <remove-project name="platform/frameworks/base" />
     <remove-project name="platform/frameworks/native" />
@@ -26,9 +25,10 @@
     <remove-project name="platform/system/netd" />
     <remove-project name="platform/system/vold" />
 
+    <extend-project name="platform/external/swiftshader" revision="refs/tags/android-10.0.0_r47" />
+
     <!-- These are all Android repositories we have modifications for -->
     <project path="external/selinux" name="platform_external_selinux" groups="redroid,aosp,pdk" remote="redroid" />
-    <project path="external/swiftshader" name="platform/external/swiftshader" groups="redroid,aosp,pdk" revision="refs/tags/android-10.0.0_r47" />
     <project path="frameworks/av" name="platform_frameworks_av" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="frameworks/base" name="platform_frameworks_base" groups="redroid,aosp,pdk-cw-fs,pdk-fs" remote="redroid" />
     <project path="frameworks/native" name="platform_frameworks_native" groups="redroid,aosp,pdk" remote="redroid" />
@@ -41,8 +41,9 @@
     <!-- Our own components -->
     <project path="device/redroid" name="device_redroid" groups="redroid" remote="redroid" />
     <project path="device/redroid-prebuilts" name="device_redroid-prebuilts" groups="redroid" remote="redroid" revision="master" clone-depth="1" />
-    <project path="external/drm_framebuffer" name="platform_external_drm_framebuffer" groups="redroid" remote="redroid" revision="master-redroid" />
-    <project path="external/gbm_gralloc" name="platform_external_gbm_gralloc" groups="redroid,bsp"  remote="redroid" revision="master-redroid" />
-    <project path="vendor/redroid" name="vendor_redroid" groups="redroid" remote="redroid" />
+    <project path="hardware/redroid/c2" name="redroid-c2" groups="redroid" remote="redroid" revision="master" />
+    <project path="hardware/redroid/gatekeeper" name="redroid-gatekeeper" groups="redroid" remote="redroid" revision="master" />
+    <project path="hardware/redroid/omx" name="redroid-omx" groups="redroid" remote="redroid" revision="master" />
+    <project path="vendor/redroid" name="vendor_redroid" groups="redroid" remote="redroid" revision="master" />
 
 </manifest>
