@@ -14,6 +14,7 @@
 
     <!-- remove few projects we have replacements for -->
     <remove-project name="platform/external/mesa3d" />
+    <remove-project name="platform/external/minijail" />
     <remove-project name="platform/external/selinux" />
     <remove-project name="platform/frameworks/av" />
     <remove-project name="platform/frameworks/base" />
@@ -25,6 +26,7 @@
 
     <!-- These are all Android repositories we have modifications for -->
     <project path="external/selinux" name="platform_external_selinux" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="external/minijail" name="platform_external_minijail" groups="predroid,aosp,dk" remote="redroid" />
     <project path="frameworks/av" name="platform_frameworks_av" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="frameworks/base" name="platform_frameworks_base" groups="redroid,aosp,pdk-cw-fs,pdk-fs" remote="redroid" />
     <project path="frameworks/native" name="platform_frameworks_native" groups="redroid,aosp,pdk" remote="redroid" />
