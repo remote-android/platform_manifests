@@ -14,6 +14,7 @@
     <remove-project name="platform/prebuilts/python/darwin-x86/2.7.5" />
 
     <!-- remove few projects we have replacements for -->
+    <remove-project name="toolchain/llvm-project" />
     <remove-project name="platform/external/mesa3d" />
     <remove-project name="platform/external/minijail" />
     <remove-project name="platform/external/selinux" />
