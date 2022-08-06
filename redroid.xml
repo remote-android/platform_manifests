@@ -24,6 +24,7 @@
     <remove-project name="platform/system/core" />
     <remove-project name="platform/system/libhwbinder" />
     <remove-project name="platform/system/netd" />
+    <remove-project name="platform/system/vold" />
 
     <!-- These are all Android repositories we have modifications for -->
     <project path="external/selinux" name="platform_external_selinux" groups="redroid,aosp,pdk" remote="redroid" />
@@ -34,6 +35,7 @@
     <project path="system/core" name="platform_system_core" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="system/libhwbinder" name="platform_system_libhwbinder" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="system/netd" name="platform_system_netd" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="system/vold" name="platform_system_vold" groups="redroid,aosp,pdk" remote="redroid" />
 
     <!-- Our own components -->
     <project path="device/redroid" name="device_redroid" groups="redroid" remote="redroid" />
