@@ -23,7 +23,6 @@
     <remove-project name="platform/frameworks/native" />
     <remove-project name="platform/system/core" />
     <remove-project name="platform/system/libhwbinder" />
-    <remove-project name="platform/system/libvintf" />
     <remove-project name="platform/system/netd" />
     <remove-project name="platform/system/vold" />
 
@@ -37,7 +36,6 @@
     <project path="frameworks/native" name="platform_frameworks_native" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="system/core" name="platform_system_core" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="system/libhwbinder" name="platform_system_libhwbinder" groups="redroid,aosp,pdk" remote="redroid" />
-    <project path="system/libvintf" name="platform_system_libvintf" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="system/netd" name="platform_system_netd" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="system/vold" name="platform_system_vold" groups="redroid,aosp,pdk" remote="redroid" />
 
