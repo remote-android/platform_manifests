@@ -27,6 +27,7 @@
     <remove-project name="platform/frameworks/opt/net/ethernet" />
     <remove-project name="platform/system/core" />
     <remove-project name="platform/system/hwservicemanager" />
+    <remove-project name="platform/system/libvintf" />
     <remove-project name="platform/system/netd" />
     <remove-project name="platform/system/vold" />
 
@@ -39,6 +40,7 @@
     <project path="frameworks/opt/net/ethernet" name="platform_frameworks_opt_net_ethernet" groups="redroid,aosp,pdk-fs" remote="redroid" />
     <project path="system/core" name="platform_system_core" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="system/hwservicemanager" name="platform_system_hwservicemanager" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="system/libvintf" name="platform_system_libvintf" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="system/netd" name="platform_system_netd" groups="redroid,aosp,pdk" remote="redroid" />
     <project path="system/vold" name="platform_system_vold" groups="redroid,aosp,pdk" remote="redroid" />
 
