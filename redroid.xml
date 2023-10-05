@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="redroid" fetch="." revision="redroid-14.0.0_r2" />
+
+    <!-- remove unused projects -->
+    <remove-project name="platform/prebuilts/bazel/darwin-x86_64" />
+    <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
+    <remove-project name="platform/prebuilts/go/darwin-x86" />
+
+    <!-- remove few projects we have replacements for -->
+    <remove-project name="platform/external/mesa3d" />
+    <remove-project name="platform/external/minijail" />
+    <remove-project name="platform/external/selinux" />
+    <remove-project name="platform/frameworks/av" />
+    <remove-project name="platform/frameworks/native" />
+    <remove-project name="platform/system/bpf" />
+    <remove-project name="platform/system/core" />
+    <remove-project name="platform/system/libhwbinder" />
+    <remove-project name="platform/system/libvintf" />
+    <remove-project name="platform/system/netd" />
+    <remove-project name="platform/system/vold" />
+
+    <!-- These are all Android repositories we have modifications for -->
+    <project path="external/selinux" name="platform_external_selinux" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="external/minijail" name="platform_external_minijail" groups="predroid,aosp,dk" remote="redroid" />
+    <project path="frameworks/av" name="platform_frameworks_av" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="frameworks/native" name="platform_frameworks_native" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="system/bpf" name="platform_system_bpf" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="system/core" name="platform_system_core" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="system/libhwbinder" name="platform_system_libhwbinder" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="system/libvintf" name="platform_system_libvintf" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="system/netd" name="platform_system_netd" groups="redroid,aosp,pdk" remote="redroid" />
+    <project path="system/vold" name="platform_system_vold" groups="redroid,aosp,pdk" remote="redroid" />
+
+    <!-- Our own components -->
+    <project path="device/redroid" name="device_redroid" groups="redroid" remote="redroid" revision="redroid-14.0.0" />
+    <project path="device/redroid-prebuilts" name="device_redroid-prebuilts" groups="redroid" remote="redroid" revision="master" clone-depth="1" />
+    <project path="hardware/redroid/c2" name="redroid-c2" groups="redroid" remote="redroid" revision="master" />
+    <project path="hardware/redroid/omx" name="redroid-omx" groups="redroid" remote="redroid" revision="master" />
+    <project path="vendor/redroid" name="vendor_redroid" groups="redroid" remote="redroid" revision="master" />
+
+    <include name="external.xml" />
+
+</manifest>
